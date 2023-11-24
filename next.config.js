@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: false, // enable browser source map generation during the production build
-  // Configure pageExtensions to include md and mdx
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  experimental: {
-    appDir: true,
-  },
-  // fix all before production. Now it slow the develop speed.
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'], // Configure pageExtensions to include md and mdx
+
+  // Removed experimental.appDir
+  
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
