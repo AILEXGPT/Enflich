@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          50: '#F9FAFB',
+          50: '#000000', // Weiß zu Schwarz geändert
           100: '#F3F4F6',
           200: '#E5E7EB',
           300: '#D1D5DB',
@@ -17,24 +17,23 @@ module.exports = {
           500: '#6B7280',
           700: '#374151',
           800: '#1F2A37',
-          900: '#111928',
+          900: '#FFFFFF', // Schwarz zu Weiß geändert
         },
         primary: {
-          50: '#EBF5FF',
-          100: '#E1EFFE',
-          200: '#C3DDFD',
-          300: '#A4CAFE',
-          600: '#1C64F2',
-          700: '#1A56DB',
+          50: '#00FFFF', // Blau zu Cyan geändert
+          100: '#00FFFF',
+          200: '#00FFFF',
+          300: '#00FFFF',
+          600: '#00FFFF',
+          700: '#00FFFF',
         },
         blue: {
-          500: '#E1EFFE',
+          500: '#00FFFF', // Blau zu Cyan geändert
         },
         green: {
           50: '#F3FAF7',
           100: '#DEF7EC',
           800: '#03543F',
-
         },
         yellow: {
           100: '#FDF6B2',
@@ -51,16 +50,13 @@ module.exports = {
       },
       screens: {
         mobile: '100px',
-        // => @media (min-width: 100px) { ... }
-        tablet: '640px', // 391
-        // => @media (min-width: 600px) { ... }
+        tablet: '640px',
         pc: '769px',
-        // => @media (min-width: 769px) { ... }
       },
     },
   },
   plugins: [
+    require('@daisyui/bootstrap'),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
   ],
 }

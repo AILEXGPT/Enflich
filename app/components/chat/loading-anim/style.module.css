@@ -34,12 +34,12 @@
 
 @keyframes dot-flashing-avatar {
   0% {
-    background-color: #155EEF;
+    background-color: #1594ef;
   }
 
   50%,
   100% {
-    background-color: rgba(21, 94, 239, 0.3);
+    background-color: rgba(21, 177, 239, 0.3);
   }
 }
 
@@ -68,8 +68,8 @@
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: #155EEF;
-  color: #155EEF;
+  background-color: #1586ef;
+  color: #15c7ef;
   animation-name: dot-flashing-avatar;
 }
 
