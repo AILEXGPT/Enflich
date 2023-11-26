@@ -56,7 +56,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@daisyui/bootstrap'),
     require('@tailwindcss/typography'),
   ],
 }
